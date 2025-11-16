@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Smart Academic Assistant — Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="topnav">
+    <div class="nav-inner">
+      <div class="brand">Smart Academic Assistant</div>
+      <div style="display:flex; align-items:center; flex:1; margin-left:20px">
+        <input class="search-input" placeholder="Search tasks, subjects..." />
+        <ul class="nav-links" style="margin-left:12px">
+          <li><a href="index.html" class="active">Dashboard</a></li>
+          <li><a href="tasks.html">Tasks</a></li>
+          <li><a href="performance.html">Performance</a></li>
+          <li><a href="analytics.html">Analytics</a></li>
+        </ul>
+        <div class="nav-logout">
+          <a href="login.html">Logout</a>
+        </div>
+        <div style="margin-left:12px" class="avatar">
+          <img src="images/avatar-1.svg" alt="avatar">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <header class="page-header">
+      <h1 class="page-title">Smart Academic Assistant</h1>
+      <div class="subtitle">Overview of predicted performance, risk and upcoming priorities</div>
+    </header>
+
+    <section>
+      <div class="hero">
+        <div style="flex:1">
+          <h2 class="hero-title">Welcome back — here's your overview</h2>
+          <div class="hero-sub">Quick glance at predicted performance and upcoming priorities.</div>
+        </div>
+        <div style="width:260px">
+          <img src="images/hero-illustration.svg" alt="hero" style="width:100%; height:auto; border-radius:8px">
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:12px; background:linear-gradient(135deg, #dbeafe 0%, #fef9e7 50%)">
+        <h3 style="color:#1e40af">About Smart Academic Assistant</h3>
+        <p style="color:#374151; line-height:1.6">
+          Smart Academic Assistant (SAA) is your personal AI-powered academic companion designed to help you succeed in your studies. 
+          Our platform provides intelligent tools to:
+        </p>
+        <ul style="color:#374151; line-height:1.8; padding-left:20px">
+          <li><strong>📊 Predict Performance:</strong> Get accurate predictions of your final grades based on current metrics and study patterns.</li>
+          <li><strong>📋 Manage Tasks:</strong> Organize assignments, exams, and study sessions with smart prioritization based on difficulty and importance.</li>
+          <li><strong>📈 Track Progress:</strong> Monitor your academic performance over time with detailed analytics and trend visualization.</li>
+          <li><strong>💡 Get Insights:</strong> Receive personalized suggestions to improve study habits, time management, and overall academic performance.</li>
+        </ul>
+        <p style="color:#6b7280; font-size:14px; margin-top:12px">
+          Whether you're preparing for exams, managing coursework, or optimizing your study routine, SAA helps you make data-driven decisions for academic success.
+        </p>
+      </div>
+
+      <div class="kpi-row">
+        <div class="kpi">
+          <div class="value">78%</div>
+          <div class="label">Avg predicted score</div>
+          <div style="margin-top:8px" class="progress"><div class="progress-inner" style="width:78%"></div></div>
+        </div>
+
+        <div class="kpi">
+          <div class="value"><span class="badge badge-warning">Medium</span></div>
+          <div class="label">Risk level</div>
+          <div style="margin-top:8px" class="progress"><div class="progress-inner" style="width:48%"></div></div>
+        </div>
+
+        <div class="kpi">
+          <div class="value">3</div>
+          <div class="label">Priority tasks</div>
+          <div style="margin-top:8px" class="progress"><div class="progress-inner" style="width:60%"></div></div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:12px;">
+        <h3>Next 3 Priority Tasks</h3>
+        <div style="display:flex; gap:12px; margin-top:8px; align-items:center">
+          <div class="thumb"><img src="images/avatar-1.svg" alt="t1"></div>
+          <div>
+            <strong>Finish assignment A</strong>
+            <div class="meta-row task-meta">Due: 2025-11-20 • <span class="badge badge-danger">High</span></div>
+          </div>
+        </div>
+        <div style="display:flex; gap:12px; margin-top:12px; align-items:center">
+          <div class="thumb"><img src="images/avatar-1.svg" alt="t2"></div>
+          <div>
+            <strong>Revise Chapter 4</strong>
+            <div class="meta-row task-meta">Due: 2025-11-22 • <span class="badge badge-warning">Medium</span></div>
+          </div>
+        </div>
+        <div style="display:flex; gap:12px; margin-top:12px; align-items:center">
+          <div class="thumb"><img src="images/avatar-1.svg" alt="t3"></div>
+          <div>
+            <strong>Prepare for quiz</strong>
+            <div class="meta-row task-meta">Due: 2025-11-25 • <span class="badge badge-info">Low</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:12px;">
+        <h3>Recent Performance Snapshot</h3>
+        <img src="images/chart-placeholder.svg" alt="chart" class="chart-img">
+      </div>
+    </section>
+
+    <div class="footer">Simple frontend — Phase 1</div>
+  </div>
+
+</body>
+</html>

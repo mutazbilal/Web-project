@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Smart Academic Assistant — Task Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="topnav">
+    <div class="nav-inner">
+      <div class="brand">Smart Academic Assistant</div>
+      <div style="display:flex; align-items:center; flex:1">
+        <input class="search-input" placeholder="Search tasks..." />
+        <ul class="nav-links" style="margin-left:12px">
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="tasks.html" class="active">Tasks</a></li>
+          <li><a href="performance.html">Performance</a></li>
+          <li><a href="analytics.html">Analytics</a></li>
+        </ul>
+        <div class="nav-logout">
+          <a href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <header class="page-header">
+      <h1 class="page-title">Task Manager</h1>
+      <div class="subtitle">Add and organise your academic tasks (form is non-functional)</div>
+    </header>
+
+    <section>
+      <div style="display:flex; gap:12px; margin-bottom:12px; align-items:flex-start">
+        <form style="flex:1">
+          <div style="display:flex; gap:8px">
+            <input type="text" placeholder="Task name" style="flex:2" class="search-input" />
+            <input type="date" class="search-input" style="flex:1" />
+            <select class="search-input" style="flex:1">
+              <option>Difficulty</option>
+              <option>Easy</option>
+              <option>Medium</option>
+              <option>Hard</option>
+            </select>
+            <button type="button" class="primary" style="flex:0 0 auto">Add</button>
+          </div>
+        </form>
+
+        <div style="width:220px; text-align:right">
+          <label style="font-size:13px; color:var(--muted)">Filter</label>
+          <select class="search-input">
+            <option>All</option>
+            <option>Due soon</option>
+            <option>High importance</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="task-list">
+        <div class="task-item">
+          <div style="display:flex; align-items:center">
+            <div class="thumb"><img src="images/avatar-1.svg" alt="thumb"></div>
+            <div style="flex:1">
+              <strong>Complete lab report</strong>
+              <div class="meta-row task-meta">Due: 2025-12-01 • <span class="badge badge-danger">High</span> • Assignment</div>
+            </div>
+            <div style="width:140px; text-align:right" class="task-meta">Progress
+              <div class="progress" style="margin-top:6px"><div class="progress-inner" style="width:62%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="task-item">
+          <div style="display:flex; align-items:center">
+            <div class="thumb"><img src="images/avatar-1.svg" alt="thumb"></div>
+            <div style="flex:1">
+              <strong>Read Chapter 7</strong>
+              <div class="meta-row task-meta">Due: 2025-11-22 • <span class="badge badge-warning">Medium</span> • Study</div>
+            </div>
+            <div style="width:140px; text-align:right" class="task-meta">Progress
+              <div class="progress" style="margin-top:6px"><div class="progress-inner" style="width:30%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="task-item">
+          <div style="display:flex; align-items:center">
+            <div class="thumb"><img src="images/avatar-1.svg" alt="thumb"></div>
+            <div style="flex:1">
+              <strong>Group project meeting</strong>
+              <div class="meta-row task-meta">Due: 2025-11-20 • <span class="badge badge-danger">High</span> • Project</div>
+            </div>
+            <div style="width:140px; text-align:right" class="task-meta">Progress
+              <div class="progress" style="margin-top:6px"><div class="progress-inner" style="width:85%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">Task Manager — static demo</div>
+  </div>
+
+</body>
+</html>

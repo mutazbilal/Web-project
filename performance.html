@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Smart Academic Assistant — Performance Predictor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="topnav">
+    <div class="nav-inner">
+      <div class="brand">Smart Academic Assistant</div>
+      <div style="display:flex; align-items:center; flex:1">
+        <input class="search-input" placeholder="Search metrics..." />
+        <ul class="nav-links" style="margin-left:12px">
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="tasks.html">Tasks</a></li>
+          <li><a href="performance.html" class="active">Performance</a></li>
+          <li><a href="analytics.html">Analytics</a></li>
+        </ul>
+        <div class="nav-logout">
+          <a href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <header class="page-header">
+      <h1 class="page-title">Performance Predictor</h1>
+      <div class="subtitle">Enter simple inputs to see a predicted score and suggestions (placeholder)</div>
+    </header>
+
+    <section style="display:flex; gap:12px; align-items:flex-start">
+      <div style="flex:1">
+        <form>
+          <div class="form-row">
+            <label for="midterm">Midterm grade (out of 100)</label>
+            <input id="midterm" type="number" placeholder="e.g. 72">
+          </div>
+
+          <div class="form-row" style="display:flex; gap:10px">
+            <div style="flex:1">
+              <label for="attendance">Attendance %</label>
+              <input id="attendance" type="number" placeholder="e.g. 85">
+            </div>
+            <div style="flex:1">
+              <label for="study-hours">Weekly study hours</label>
+              <input id="study-hours" type="number" placeholder="e.g. 10">
+            </div>
+          </div>
+
+          <div class="form-row" style="display:flex; gap:10px">
+            <div style="flex:1">
+              <label for="assignment">Assignment completion %</label>
+              <input id="assignment" type="number" placeholder="e.g. 90">
+            </div>
+            <div style="flex:1">
+              <label for="sleep">Average sleep hours</label>
+              <input id="sleep" type="number" placeholder="e.g. 7">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <button type="button" class="primary">Predict</button>
+          </div>
+        </form>
+
+        <div style="margin-top:12px;">
+          <div class="card">
+            <h3>Predicted Score</h3>
+            <p>Placeholder: Your predicted score will be shown here (e.g. <strong>78%</strong>).</p>
+            <div style="margin-top:8px" class="progress"><div class="progress-inner" style="width:78%"></div></div>
+          </div>
+
+          <div class="card" style="margin-top:10px;">
+            <h3>Suggestions</h3>
+            <p class="task-meta">Placeholder suggestions to improve study habits and performance.</p>
+            <ul style="margin-top:8px; padding-left:18px">
+              <li><span class="badge badge-info">Study</span> Increase focused study sessions to 10 hours/week.</li>
+              <li style="margin-top:6px"><span class="badge badge-success">Health</span> Keep sleep close to 7-8 hours nightly.</li>
+              <li style="margin-top:6px"><span class="badge badge-warning">Task</span> Prioritise high-impact assignments first.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div style="width:360px">
+        <div class="card">
+          <h3>Recent Trend</h3>
+          <img src="images/chart-placeholder.svg" alt="trend" class="chart-img">
+          <div class="legend">
+            <div class="item"><span class="sw" style="background:#e0f2fe"></span> Attendance</div>
+            <div class="item"><span class="sw" style="background:#fff4e6"></span> Assignments</div>
+            <div class="item"><span class="sw" style="background:#f3e8ff"></span> Study hours</div>
+          </div>
+        </div>
+
+        <div class="small-box" style="margin-top:12px">
+          <h3>Quick Tips</h3>
+          <p class="task-meta">Short actionable notes: plan study blocks, avoid all-nighters, submit assignments early.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">Performance Predictor — static UI</div>
+  </div>
+
+</body>
+</html>
